@@ -1,0 +1,23 @@
+# SDE_VERSION : 9.2.0
+tofino_8_19_20:
+  global_configure_options: ''
+  package_dependencies:
+  - thrift
+  - grpc
+  packages:
+  - bf-syslibs:
+    - bf_syslibs_configure_options: ''
+  - bf-utils:
+    - bf_utils_configure_options: ''
+  - bf-drivers:
+    - bf_drivers_configure_options: ''
+    - bf-runtime
+    - p4-runtime
+    - pi
+  - bf-diags:
+    - bf_diags_configure_options: ''
+  - bf-platforms:
+    - bsp_path: /home/jsonch/bf_sde/bf-reference-bsp-9.2.0/
+    - bf_platforms_configure_options: ''
+  - ptf-modules
+  tofino_architecture: tofino
